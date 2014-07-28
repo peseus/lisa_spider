@@ -93,6 +93,7 @@ function get_jd_page(jd_page_index) {
 			// 处理职位
 			try {
 				var name = document.querySelectorAll('div.main-view h1')[0].innerHTML;
+				name = name.substr(0, name.indexOf('<'));
 				var sup_node = document.querySelectorAll('div.main-view h2 sup')[0];
 				sup_node.parentNode.removeChild(sup_node);
 				var company_desc = document.querySelectorAll('div.main-view h2')[0].innerHTML;
