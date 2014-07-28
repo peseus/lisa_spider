@@ -98,7 +98,7 @@ function get_jd_page(jd_page_index) {
 				var company_desc = document.querySelectorAll('div.main-view h2')[0].innerHTML;
 				var company_padding = "招聘企业：";
 				var company = company_desc.substring(company_padding.length);
-				var salary = document.querySelectorAll('.salary em')[0].innerHTML;
+				var salary = document.querySelectorAll('.big_size')[0].innerHTML;
 				var el_uls = document.querySelectorAll('.a-content ul');
 				var el_lis = el_uls[1].querySelectorAll('li');
 				var el_places = el_lis[4].querySelectorAll('a');
